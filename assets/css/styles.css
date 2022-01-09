@@ -200,13 +200,12 @@ header{
     color: var(--gainsboro);
 }
 
-.link-profile{
-    
+.link-underline{
     border-bottom: 1px solid hsla(100, 100%, 100%, 0.2);
     transition: var(--default-trasition);
 }
 
-.link-profile:hover{
+.link-underline:hover{
     color: var(--liver-chestunut);
     border-bottom: 1px solid hsla(100, 100%, 100%, 0.4);
 }
@@ -328,5 +327,34 @@ header{
     font-size: var(--fs-4);
     margin-bottom: 60px;
 }
+
+.about-table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--fs-5);
+    text-align: left;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+.about-table tr{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-table tr:not(:last-child){ margin-bottom: 20px;}
+
+.about-table th{
+    color: var(--battleship-gray);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.about-table td{
+    color: var(--gainsboro);
+}
+
+
 
 
