@@ -425,6 +425,15 @@ header{
     animation: fade 0.75s ease;
 }
 
+.tab-content-skill{display: none;}
+
+.tab-content-skill.active{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+
 @keyframes fade{
     0% {opacity: 0;}
     100% {opacity: 1;}
@@ -479,3 +488,34 @@ header{
     line-height: 24px;
 }
 
+.skill-box{ 
+    width: 33.333%;
+    padding: 10px;
+}
+
+/* .skill-box:not(:first-child){
+    padding
+} */
+
+.skill-box .skill-title .icon-skill{
+    width: 25%;
+    margin: auto;
+}
+
+.skill-box .skill-title a{
+    color: var(--gainsboro);
+    padding-top: 40px;
+    text-transform: uppercase;
+    font-size: var(--fs-3);
+}
+
+.skill-box .skill-title a:hover{
+    color: var(--liver-chestunut);
+    cursor: pointer;
+}
+
+.skill-box p{
+    color: var(--battleship-gray);
+    text-align: justify;
+    padding: 20px 0;
+}
