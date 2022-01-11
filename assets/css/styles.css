@@ -677,3 +677,44 @@ header{
     font-size: var(--fs-5);
     font-weight: 500;
 }
+
+#customers .wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 100px;
+    padding-top: 30px;
+}
+
+#customers .wrapper .img-box{
+    background: var(--smoky-black);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--default-trasition);
+}
+
+#customers .wrapper .img-box:hover{ background-color: var(--eerie-black);}
+
+.testimonials{width: 100%;}
+
+.testimonials-content p{
+    color: var(--battleship-gray);
+    font-size: var(--fs-4);
+    margin-bottom: 50px;
+}
+
+.testimonials-content .title{
+    color: var(--gainsboro);
+    font-size: var(--fs-2);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.testimonials-content .subtitle{
+    color: var(--battleship-gray);
+    font-size: var(--fs-5);
+    font-weight: 400;
+    text-transform: uppercase;
+}
