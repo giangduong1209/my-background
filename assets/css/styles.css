@@ -519,3 +519,114 @@ header{
     text-align: justify;
     padding: 20px 0;
 }
+
+
+#portfolio .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-right: 20px;
+}
+
+#portfolio .wrapper .section-title{margin-bottom: 0;}
+
+.btn-group{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.btn-group button{ position: relative;}
+
+.btn-group .arrow{
+    position: relative;
+    width: 25px;
+    height: 1px;
+    background: var(--battleship-gray);
+    border-color: var(--battleship-gray);
+    transition: var(--default-trasition);
+}
+
+.btn-group .arrow .arrow-head-left,
+.btn-group .arrow .arrow-head-right{
+    position: absolute;
+    top: -7px;
+    left: 1px;
+    width: 15px;
+    height: 15px;
+    border-width: 0 0 1px 1px;
+    border-style: solid;
+    border-color: inherit;
+    transform: rotate(45deg);
+}
+
+.btn-group .arrow .arrow-head-right{
+    left: 8px;
+    border-width: 1px 1px 0 0;
+}
+
+.btn-group button:hover .arrow{
+    background: var(--liver-chestunut);
+    border-color: var(--liver-chestunut);
+}
+
+.btn-group button::after{
+    content: "";
+    position: absolute;
+    inset: -15px -5px;
+    border: 1px solid transparent;
+    transition: var(--default-trasition);
+}
+
+.btn-group button:hover::after{
+    inset: -25px -15px;
+    border-color: var(--liver-chestunut);
+}
+
+.portfolio-carousel{
+    position: relative;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.portfolio-carousel-inner{
+    width: 500%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    transition: 0.75s ease;
+}
+
+/* .portfolio-carousel-card{width: 100%;} */
+
+.portfolio-carousel-card .card-head{
+    width: 100%;
+    aspect-ratio: 4/3;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.portfolio-carousel-card .card-head img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-carousel-card .card-body p{
+    color: var(--battleship-gray);
+    font-size: var(--fs-5);
+    margin-bottom: 5px;
+}
+
+.portfolio-carousel-card .card-body a{
+    color: var(--gainsboro);
+    font-size: var(--fs-3);
+    display: inline-block;
+    font-weight: 500;
+    transition: var(--default-trasition);
+}
+
+.portfolio-carousel-card .card-body a:hover{color: var(--liver-chestunut);}
