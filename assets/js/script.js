@@ -20,6 +20,7 @@ for (let i = 0; i < tabButtons.length; i++){
             if (tabContents[i].classList.contains("active")) tabContents[i].classList.remove("active");
             if (tabContents[i].classList.contains(this.classList[0]))
             tabContents[i].classList.add("active");
+            
         }
         this.classList.add("active");
     });
