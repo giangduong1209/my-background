@@ -1,7 +1,7 @@
 const menuOpenBtn = document.querySelector(".menu-open-btn");
 const menuCloseBtn = document.querySelector(".menu-close-btn");
 const menu = document.querySelector(".nav");
-const menuLinkBtn = document.querySelector(".nav-link");
+// const menuLinkBtn = document.querySelector(".nav-link");
 
 const menuToggle = () => menu.classList.toggle("active");
 
