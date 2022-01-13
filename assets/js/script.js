@@ -9,7 +9,6 @@ menuOpenBtn.addEventListener("click", menuToggle);
 menuCloseBtn.addEventListener("click", menuToggle);
 
 const tabButtons = document.querySelectorAll(".tab-button");
-const tabButtonActive = document.querySelectorAll(".tab-button.active");
 const tabContents = document.querySelectorAll(".tab-content");
 
 
@@ -25,3 +24,35 @@ for (let i = 0; i < tabButtons.length; i++){
         this.classList.add("active");
     });
 }
+
+const portfolioCarouselCards = document.querySelectorAll(".portfolio-carousel-card");
+const portfolioCarouselInner = document.querySelector(".portfolio-carousel-inner");
+const portfolioCarouselPrev = document.querySelector("#portfolio-carousel-prev");
+const portfolioCarouselNext = document.querySelector("#portfolio-carousel-next");
+
+const totalPortfolioCard = portfolioCarouselCards.length;
+
+let portfolioCount = 0;
+
+const carouselFunc = function (countParam){
+    if(countParam >= totalPortfolioCard - 1) portfolioCount = 
+    totalPortfolioCard - 1;
+    if(countParam <= 0) portfolioCount = 0;
+
+    portfolioCarouselInner.style.transform = `translateX(-${100 / 
+        totalPortfolioCard * portfolioCount}%)`;
+}
+
+portfolioCarouselNext.addEventListener("click", function(){
+    portfolioCount++;
+    console.log("count A = ", portfolioCount);
+    carouselFunc(portfolioCount);
+});
+
+portfolioCarouselPrev.addEventListener("click", function(){
+    portfolioCount--;
+    carouselFunc(portfolioCount);
+})
+
+
+
