@@ -818,6 +818,13 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 1s ease;
+    opacity: 0;
+}
+
+.go-top.active{
+    transition: 3s ease;
+    opacity: 1;
 }
 
 .go-top .arrow{
