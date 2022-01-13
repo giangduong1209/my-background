@@ -131,15 +131,15 @@ header{
 }
 
 .nav-item{
-    /* transform: translateY(50px);
+    transform: translateY(50px);
     transition: 1s ease;
-    opacity: 0; */
+    opacity: 0;
 }
 
 .nav.active .nav-item{
-    /* transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
-    transition-delay: 0.5s; */
+    transition-delay: 0.5s;
 }
 
 .nav-item:not(:last-child){
@@ -493,9 +493,6 @@ header{
     padding: 10px;
 }
 
-/* .skill-box:not(:first-child){
-    padding
-} */
 
 .skill-box .skill-title .icon-skill{
     width: 25%;
@@ -599,7 +596,7 @@ header{
     transition: 0.75s ease;
 }
 
-/* .portfolio-carousel-card{width: 100%;} */
+.portfolio-carousel-card{width: 100%;}
 
 .portfolio-carousel-card .card-head{
     width: 100%;
