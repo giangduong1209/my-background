@@ -54,5 +54,17 @@ portfolioCarouselPrev.addEventListener("click", function(){
     carouselFunc(portfolioCount);
 })
 
+const mainScroll = document.querySelector("main")
+const goTop = document.querySelector(".go-top");
+
+mainScroll.addEventListener("scroll", function(){
+    if(mainScroll.scrollTop > 0){
+        goTop.classList.add("active");
+    }
+    else{
+        goTop.classList.remove("active");
+    }
+})
+
 
 
