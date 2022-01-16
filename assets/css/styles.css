@@ -777,6 +777,7 @@ header{
 }
 
 .alert{
+    display: none;
     color: #155724;
     background-color: #d4edda;
     font-size: var(--fs-5);
@@ -790,11 +791,6 @@ header{
     transition: var(--default-trasition);
     margin-bottom: 20px;
     pointer-events: none;
-    opacity: 0;
-}
-
-.alert.active{
-    opacity: 1;
 }
 
 .address, .phone, .email{margin-bottom: 50px;}
