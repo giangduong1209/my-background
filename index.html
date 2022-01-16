@@ -422,7 +422,7 @@
                 <h3 class="section-subtitle">Contact</h3>
                 <h2 class="section-title">Get In Touch</h2>
                 <p class="section-desc">If you have any suggestion, project or even you want to say "Hello" , please fill out the form below and I will reply you shortly.</p>
-                <form action="" method="post" class="contact-form">
+                <form action="./action.php" method="POST" class="contact-form">
                     <div class="wrapper">
                         <div>
                             <label for="name">Name</label>
@@ -443,6 +443,9 @@
                     </div>
                     <button type="submit" name="submit">Send Message</button>
                 </form>
+                <div class="alert">
+                    Your message has been recorded!
+                </div>
                 <div class="address">
                     <h4>Address</h4>
                     <address>19, Nguyen Huu Tho St, Tan Hung, District 7, Ho Chi Minh City</address>
@@ -477,22 +480,20 @@
     <script src="./assets/js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script>
+    <!-- <script>
         $(document).ready(function(){
             $(".contact-form").submit(function(e){
                 e.preventDefault();
-
-                alert("You're submited successfull");
-                // $.ajax({
-                //     url: '',
-                //     type: "post",
-                //     data: $('.contact-form').serialize(),
-                //     success: function(){
+                $.ajax({
+                    url: 'action.php',
+                    type: "post",
+                    data: JSON,
+                    success: function(){
                         
-                //     }
-                // })
+                    }
+                })
             })
         })  
-    </script>
+    </script> -->
 </body>
 </html>
