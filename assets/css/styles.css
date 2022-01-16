@@ -776,6 +776,27 @@ header{
     border-color: var(--liver-chestunut);
 }
 
+.alert{
+    color: #155724;
+    background-color: #d4edda;
+    font-size: var(--fs-5);
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid #c3e6cb;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    transition: var(--default-trasition);
+    margin-bottom: 20px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.alert.active{
+    opacity: 1;
+}
+
 .address, .phone, .email{margin-bottom: 50px;}
 
 :is(.address, .phone, .email) h4{
