@@ -41,8 +41,8 @@ html{
 
 
 .container{
-    max-width: 1440px;
-    margin: auto;
+    /* max-width: 1440px;
+    margin: auto; */
     background-color: var(--eerie-black-dark);
     overflow: hidden;
 }
@@ -70,6 +70,7 @@ header{
     color: var(--white);
     font-size: var(--fs-3);
 }
+
 
 .nav{
     position: absolute;
