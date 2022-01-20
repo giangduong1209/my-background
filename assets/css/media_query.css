@@ -91,7 +91,10 @@
 
     .nav{padding: 100px 50px;}
 
-    .intro{padding: 80px 50px;}
+    .intro{
+        padding: 80px 50px;
+        /* margin: 70px; */
+    }
 
     main{
         width: 60%;
@@ -109,5 +112,11 @@
 
     .footer{
         padding: 50px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .intro{
+        margin: 60px;
     }
 }
