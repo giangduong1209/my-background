@@ -66,5 +66,11 @@ mainScroll.addEventListener("scroll", function(){
     }
 })
 
+var age = dateCurrent.getFullYear() - 2000;
+const dateCurrent = new Date();
+const agePerson = document.getElementById("age");
+
+agePerson.innerHTML = `${age} years`;
+
 
 
