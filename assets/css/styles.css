@@ -828,7 +828,7 @@ header{
 .go-top{
     position: fixed;
     background: var(--light-gray);
-    bottom: 10px;
+    bottom: -14px;
     right: 5%;
     height: 50px;
     width: 50px;
@@ -838,9 +838,11 @@ header{
     align-items: center;
     transition: 1s ease;
     opacity: 0;
+    cursor: context-menu;
 }
 
 .go-top.active{
+    cursor: pointer;
     transition: 3s ease;
     opacity: 1;
 }
